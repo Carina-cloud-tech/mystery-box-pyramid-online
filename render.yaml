@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mystery-box-pyramid
+    runtime: python
+    plan: free
+    buildCommand: echo ok
+    startCommand: python server.py
+    envVars:
+      - key: TEACHER_PIN
+        sync: false
